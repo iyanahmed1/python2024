@@ -1,4 +1,4 @@
-#dict comprehension allow you to create a new dict by iterating over an exisiting 
+#dict comprehension allow you to create a new dict by iterating over an exisiting iterable
 #specifying key values pair
 #syntax'{key_expression: value_expression for item in iterable if condition}
 #create a dictonary of square numbers range 1-5
