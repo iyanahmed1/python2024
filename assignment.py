@@ -38,3 +38,43 @@ def main():
             print('Invalid choice.Please enter a valid choice')
 if __name__=='__main__':
     main()
+
+student_list=[]
+def addstudent():
+    while True:
+        #prompt the user to add their details
+        name=input('Enter Your name: ')
+        age=input('Enter your age: ')
+        grade=input('Enter your grade: ')
+        #validate age and grade are intergers
+        if not age.isdigit() or not grade.isdigit():
+            print('The age and grade fields must be digit values!')
+            print('Please enter thr values again.')
+            continue
+        #create a dict to hold the students details
+        student={'Name':name,'Age':int(age),'Grade':int(grade)}
+        #store the student details into the list we created above
+        student_list.append(student)
+        #create a loop for entry until the user opts out
+        newstudent=input('Add another student to thr system? Press Y for Yes and N for No')
+        if newstudent !='Y':
+            #IF THE KEY PRESSED id not Y, then exit the loop
+            break
+def displaystudents():
+    if not student_list:
+        print('No records found')
+        return
+
+    print('Student Details: ')
+    for student in student_list:
+            print(f"name: {student['name']} Age:{student['age']} Grade{student['grade']}")
+            print()
+        #main loop presents a menu to user to allow them to choose different values based on their input
+def main():
+        while True:
+            print('Press 1 to Add student details')
+            print('Press 2 to view student details')
+            print('Press 3 to exit the system')
+            #get the user input
+            userinput=input('Please select your choice: ')
+            if userinput =='1':
