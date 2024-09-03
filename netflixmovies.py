@@ -1,4 +1,3 @@
-# {1: 3, 7: 1, 3: 3, 5: 2, 2: 6, 9: 2}
 movies = [
     {"title": "The Shawshank Redemption", "genre": "Drama", "rating": 9.3},
     {"title": "The Godfather", "genre": "Crime", "rating": 9.2},
