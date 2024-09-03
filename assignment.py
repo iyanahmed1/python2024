@@ -38,7 +38,7 @@ def main():
             print('Invalid choice.Please enter a valid choice')
 if __name__=='__main__':
     main()
-
+    
 student_list=[]
 def addstudent():
     while True:
