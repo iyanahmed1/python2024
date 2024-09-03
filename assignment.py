@@ -38,7 +38,6 @@ def main():
             print('Invalid choice.Please enter a valid choice')
 if __name__=='__main__':
     main()
-
 student_list=[]
 def addstudent():
     while True:
@@ -78,3 +77,12 @@ def main():
             #get the user input
             userinput=input('Please select your choice: ')
             if userinput =='1':
+                addstudent()
+            elif userinput=='2':
+                displaystudents()
+            elif userinput=='3':
+                break
+            else:
+                print('Invalid option. Enter 1 or 2 or 3')
+if __name__=='__main__':
+    main()
