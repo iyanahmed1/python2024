@@ -38,19 +38,69 @@ has_good_credit=True
 if has_high_income and has_good_credit:
     print('Eligible for loan')"""
 
-temperature=35
+"""temperature=35
 if temperature>30:
     print("its a hot day.")
 elif temperature<30:
     print('its a cold day')
 else:
-    print('its neither hot or cold')
+    print('its neither hot or cold')"""
 
-name=input('Please enter your name: ')
-name=int()
+"""name='Hayyan'
 if len(name)<3:
     print('Nmae must be three characters long')
 elif len(name)>50:
     print('names must be less than 50 characters.')
 else:
-    print('name looks good')
+    print('name looks good')"""
+
+"""weight=int(input('please enter your weight: '))
+unit=input('(L)bs or (K)g: ')
+if unit.upper() =='L':
+   converted= weight *0.45
+   print(f"You are {converted} kilos ")
+else:
+   converted= weight/0.45
+   print(f"you are{converted} pounds")"""
+
+"""i = 1
+while i<=5:
+    print(i)
+    i=i+1
+print('done')"""
+
+"""secret_number=15
+guess_count = 0
+guess_limit= 3
+while guess_count < guess_limit:
+    guess =int(input('Guess: '))
+    guess_count +=1
+    if guess ==secret_number:
+        print('You win')
+        break
+else:
+    print('You lost')"""
+
+#car building game
+#command=""
+while True:
+    command = input(">").lower()
+    if command== 'start':
+        print('Car started...')
+    elif command == 'stop':
+        print('The car stopped')
+    elif command =='help':
+        print("""
+start- to start the car
+stop - to stop the car
+quit- to quit""")
+    elif command =='quit':
+        break
+    else:
+        print('Sorry I do not understand')
+
+
+
+
+
+
